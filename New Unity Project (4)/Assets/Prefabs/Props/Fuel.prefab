@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3876116864598214617}
-  m_Mesh: {fileID: 2534964839176971238, guid: d76874d706cd8214bb6143023c265437, type: 3}
+  m_Mesh: {fileID: 4300000, guid: d76874d706cd8214bb6143023c265437, type: 3}
 --- !u!23 &3876116864598214623
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -69,7 +69,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -300,6 +299,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 198164494107881668, guid: ae14b44785a276b4ca60cab0d2cb2561,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 198227799189599300, guid: ae14b44785a276b4ca60cab0d2cb2561,
         type: 3}
       propertyPath: playOnAwake
@@ -315,17 +319,12 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 198164494107881668, guid: ae14b44785a276b4ca60cab0d2cb2561,
+    - target: {fileID: 198856487271546204, guid: ae14b44785a276b4ca60cab0d2cb2561,
         type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198857989174401832, guid: ae14b44785a276b4ca60cab0d2cb2561,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198856487271546204, guid: ae14b44785a276b4ca60cab0d2cb2561,
         type: 3}
       propertyPath: playOnAwake
       value: 0

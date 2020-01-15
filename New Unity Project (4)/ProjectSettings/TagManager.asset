@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - UIButton
+  - Shield
+  - Ship
+  - Laser
+  - Fuel
+  - SpawnMan
+  - Astroid
+  - Trash
+  - AimWall
+  - Target
+  - Button
   layers:
   - Default
   - TransparentFX
@@ -14,9 +25,9 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
+  - AimWall
+  - Asteroid
+  - Button
   - 
   - 
   - 
