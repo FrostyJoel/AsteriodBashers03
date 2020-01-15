@@ -6298,7 +6298,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0801d4853839fa949b8dfe41d329d4c5, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_BestFit: 1
@@ -7294,6 +7294,87 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 8278c72439e0cb34085ef41a38e4247f,
     type: 3}
   m_PrefabInstance: {fileID: 1763252083}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1826747830
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4453021244489264950}
+    m_Modifications:
+    - target: {fileID: 4116504624265155026, guid: 40276bb5d6adf8940bfc15b8b0036758,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116504624265155026, guid: 40276bb5d6adf8940bfc15b8b0036758,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116504624265155026, guid: 40276bb5d6adf8940bfc15b8b0036758,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116504624265155026, guid: 40276bb5d6adf8940bfc15b8b0036758,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116504624265155026, guid: 40276bb5d6adf8940bfc15b8b0036758,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116504624265155026, guid: 40276bb5d6adf8940bfc15b8b0036758,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116504624265155026, guid: 40276bb5d6adf8940bfc15b8b0036758,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116504624265155026, guid: 40276bb5d6adf8940bfc15b8b0036758,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116504624265155026, guid: 40276bb5d6adf8940bfc15b8b0036758,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116504624265155026, guid: 40276bb5d6adf8940bfc15b8b0036758,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116504624265155026, guid: 40276bb5d6adf8940bfc15b8b0036758,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116504624265155053, guid: 40276bb5d6adf8940bfc15b8b0036758,
+        type: 3}
+      propertyPath: m_Name
+      value: MagnetShield
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40276bb5d6adf8940bfc15b8b0036758, type: 3}
+--- !u!4 &1826747831 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4116504624265155026, guid: 40276bb5d6adf8940bfc15b8b0036758,
+    type: 3}
+  m_PrefabInstance: {fileID: 1826747830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1826747832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4116504624265155053, guid: 40276bb5d6adf8940bfc15b8b0036758,
+    type: 3}
+  m_PrefabInstance: {fileID: 1826747830}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1915070480
 GameObject:
@@ -18402,7 +18483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &4453021244327541023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18816,10 +18897,10 @@ RectTransform:
   m_Father: {fileID: 4453021244327541021}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 564.35284, y: -911.5606}
-  m_SizeDelta: {x: 1008.7057, y: 324.62424}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4453021244444399514
 CanvasRenderer:
@@ -19006,9 +19087,9 @@ MonoBehaviour:
   maxCooldown: 0
   currentCooldown: 0
   readyToFire: 0
-  magneticField: {fileID: 0}
+  magneticField: {fileID: 1826747832}
   magneticTimer: 5
-  magnetAnimator: {fileID: 0}
+  magnetAnimator: {fileID: 4453021244498510040}
 --- !u!1 &4453021244489167640
 GameObject:
   m_ObjectHideFlags: 0
@@ -19036,7 +19117,7 @@ GameObject:
   - component: {fileID: 4453021244489264954}
   - component: {fileID: 4453021244502834712}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: MagnetArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19218,6 +19299,7 @@ Transform:
   m_Children:
   - {fileID: 4453021244489264952}
   - {fileID: 4453021244489264954}
+  - {fileID: 1826747831}
   m_Father: {fileID: 4453021245000363147}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19452,10 +19534,10 @@ RectTransform:
   m_Father: {fileID: 4453021244327541021}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 564.35284, y: -566.93634}
-  m_SizeDelta: {x: 1008.7057, y: 324.62424}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4453021244585574789
 GameObject:
@@ -20001,7 +20083,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0801d4853839fa949b8dfe41d329d4c5, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_BestFit: 1
@@ -20755,7 +20837,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0801d4853839fa949b8dfe41d329d4c5, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_BestFit: 1
@@ -21009,7 +21091,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4453021245009548795}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4453021244327541021}
@@ -21017,7 +21099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 564, y: -341}
+  m_AnchoredPosition: {x: 564, y: -402}
   m_SizeDelta: {x: 1008.7, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4453021245009548795
@@ -22917,7 +22999,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0801d4853839fa949b8dfe41d329d4c5, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -23343,7 +23425,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'Tip: Brandstof is je levenslijn! Als je een brandstof tank ziet, gebruik
+    je magneet om het binnen te halen!
+
+'
 --- !u!224 &4453021245652145053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23504,7 +23589,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0801d4853839fa949b8dfe41d329d4c5, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_BestFit: 1
@@ -23760,7 +23845,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0801d4853839fa949b8dfe41d329d4c5, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_BestFit: 1
@@ -23888,10 +23973,10 @@ RectTransform:
   m_Father: {fileID: 4453021244327541021}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 564.35284, y: -222.31212}
-  m_SizeDelta: {x: 1008.7057, y: 324.62424}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4453021245960896530
 GameObject:
@@ -24271,7 +24356,7 @@ MonoBehaviour:
   ps: {fileID: 198018231974809468, guid: 89cabaed2b8ddf34f84ddba3eaa49707, type: 3}
   currentRocket: 0
   maxRockets: 0
-  maxCooldownTillNewRocket: 0
+  maxCooldownTillNewRocket: 30
   currentCooldown: 0
 --- !u!4 &4453021246235295261
 Transform:
@@ -24591,7 +24676,7 @@ MonoBehaviour:
   ps: {fileID: 198018231974809468, guid: 89cabaed2b8ddf34f84ddba3eaa49707, type: 3}
   currentRocket: 0
   maxRockets: 0
-  maxCooldownTillNewRocket: 0
+  maxCooldownTillNewRocket: 30
   currentCooldown: 0
 --- !u!224 &4453021246341198120
 RectTransform:
@@ -29629,7 +29714,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0801d4853839fa949b8dfe41d329d4c5, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_BestFit: 1
@@ -30058,7 +30143,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0801d4853839fa949b8dfe41d329d4c5, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_BestFit: 1
