@@ -6733,9 +6733,9 @@ GameObject:
   - component: {fileID: 1261596179}
   - component: {fileID: 1261596178}
   - component: {fileID: 1261596177}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MissileButton_R
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18635,9 +18635,9 @@ GameObject:
   - component: {fileID: 4453021244389668141}
   - component: {fileID: 4453021244391926767}
   - component: {fileID: 4453021244391926766}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MissileButton_L
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21368,11 +21368,11 @@ MonoBehaviour:
   currentCooldown: 0
   readyToFire: 0
   laserCannons:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4453021244652438022}
+  - {fileID: 4453021246265921754}
   firePoint:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2139987387}
+  - {fileID: 1348823114}
   aimPoint: {x: 0, y: 0, z: 0}
   turnSpeed: 20
   LaserReady: Laser Gereed
