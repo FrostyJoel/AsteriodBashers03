@@ -5885,6 +5885,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1631207060058967963, guid: 0da64a41e199245419e1d884a61cb64f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1631207060451291193, guid: 0da64a41e199245419e1d884a61cb64f,
         type: 3}
       propertyPath: ship
@@ -5970,6 +5975,11 @@ PrefabInstance:
       propertyPath: magnetArm
       value: 
       objectReference: {fileID: 4453021244489167638}
+    - target: {fileID: 1631207060935172425, guid: 0da64a41e199245419e1d884a61cb64f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1631207061041598575, guid: 0da64a41e199245419e1d884a61cb64f,
         type: 3}
       propertyPath: buttons.Array.data[0]
@@ -7313,9 +7323,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1915070480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
 --- !u!114 &1915070482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7325,9 +7342,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1915070480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!4 &1915070483
 Transform:
   m_ObjectHideFlags: 0
@@ -7851,7 +7871,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484816802953891150}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -18228,9 +18248,9 @@ GameObject:
   - component: {fileID: 4453021244322356327}
   - component: {fileID: 4453021244322356326}
   - component: {fileID: 4453021244322356325}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lever
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22340,9 +22360,9 @@ GameObject:
   - component: {fileID: 4453021245371481889}
   - component: {fileID: 4453021245371481888}
   - component: {fileID: 4453021245371481887}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ShieldButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23589,9 +23609,9 @@ GameObject:
   - component: {fileID: 4453021245797295558}
   - component: {fileID: 4453021245797295557}
   - component: {fileID: 4453021245797295556}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MagnetButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
