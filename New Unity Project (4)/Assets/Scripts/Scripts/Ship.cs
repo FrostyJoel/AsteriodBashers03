@@ -12,6 +12,7 @@ public class Ship : MonoBehaviour
     public float dangerzone = 250.0f;
     public float maxFuel;
     public float speed;
+    public SoundMan sound;
 
     [Header("UX")]
     public Light topLeft;
@@ -34,6 +35,7 @@ public class Ship : MonoBehaviour
 
     private void Start()
     {
+        sound = GameManager.instance.soundMan;
         GameManager.instance.uiMan.maxFuel = maxFuel;
         UiUpdate();
     }
@@ -85,6 +87,11 @@ public class Ship : MonoBehaviour
 
         if (currentFuel <= dangerzone)
         {
+            if (sound.sounds[12].source.isPlaying)
+            {
+                return;
+            }
+            GameManager.instance.soundMan.Play("Alarm");
             topLeft.color = colRed;
             topRight.color = colRed;
             sideLeft.color = colRed;

@@ -23,6 +23,7 @@ public class Instantiate : MonoBehaviour
         {
             Instantiate(instatiate, transform.position,Quaternion.Euler(transform.forward));
             currentRocket--;
+            GameManager.instance.soundMan.Play("Rocket");
         }
         else
         {

@@ -39,6 +39,7 @@ public class AstroidMovement : MonoBehaviour
     {
         if (other.tag == "Laser" || other.tag == "Explosion")
         {
+            GameManager.instance.soundMan.Play("Explosion " + GameManager.instance.soundMan.RandomExplosionSound().ToString());
             deathAnimation.Play();
             GameManager.instance.uiMan.scoreGot += (GetComponentInChildren<SpaceJunk>().randomScale + GetComponentInChildren<SpaceJunk>().rotSpeed + moveSpeed);
             GetComponent<Renderer>().enabled = false;

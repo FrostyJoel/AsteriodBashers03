@@ -8,6 +8,7 @@ public class Shield : MonoBehaviour
     {
         if(c.gameObject.tag == "Trash")
         {
+            GameManager.instance.soundMan.Play("ShieldHit");
             Destroy(c.gameObject);
         }
     }
