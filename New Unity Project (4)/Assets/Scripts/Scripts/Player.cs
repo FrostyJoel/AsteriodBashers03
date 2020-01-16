@@ -60,11 +60,7 @@ public class Player : MonoBehaviour
                 GameManager.instance.weaponMan.laserBeam.GetComponent<LaserBeam>().aimPoint = hit.point;
                 foreach (GameObject laser in GameManager.instance.weaponMan.laserBeam.GetComponent<LaserBeam>().firePoint)
                 {
-                    float dis = Vector3.Distance(laser.transform.position, hit.transform.position);
-                    if (dis > maxDis)
-                    {
-                        laser.transform.LookAt(hit.point);
-                    }
+                    laser.transform.LookAt(hit.point);
                 }
             }
             else
@@ -72,6 +68,10 @@ public class Player : MonoBehaviour
                 GameManager.instance.weaponMan.laserBeam.GetComponent<LaserBeam>().ResetWeapon();
             }
         }
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(pointer.CreateRaycast(pointer.interactableMask).point, 1);
     }
 
     public void Interactible(RaycastHit hit)

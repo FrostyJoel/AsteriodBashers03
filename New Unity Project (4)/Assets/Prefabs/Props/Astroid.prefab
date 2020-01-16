@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b534c7b29dd94424797d4f28fc4f77f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimation: {fileID: 336360092814673712}
   moveSpeed: 10
   minMovespeed: 5
   maxMovespeed: 15
@@ -97,7 +98,7 @@ GameObject:
   - component: {fileID: 7056609844899322982}
   m_Layer: 10
   m_Name: Sphere
-  m_TagString: Astroid
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,7 +188,6 @@ MonoBehaviour:
   maxRotationSpeed: 2
   rotSpeed: 0
   parent: {fileID: 7017113191834420380}
-  deathAnimation: {fileID: 336360092814673712}
 --- !u!114 &5749002184480135314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +212,7 @@ SphereCollider:
   m_GameObject: {fileID: 7017113193514643494}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 2.3454826
   m_Center: {x: -0.083501816, y: -0.022956371, z: 0.24901783}
@@ -4983,7 +4983,7 @@ ParticleSystemRenderer:
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_VertexStreams: 00010304
-  m_Mesh: {fileID: 2714248295958697210, guid: d8a621ef4539919479696954e2bd15c7, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 00f61e7193da607428800f71d6a3a4e9, type: 3}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}

@@ -8,7 +8,6 @@ public class SoundMan : MonoBehaviour
     public Sound[] sounds;
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -23,8 +22,8 @@ public class SoundMan : MonoBehaviour
     private void Start()
     {
         StopAllMusic();
-        GameManager.instance.soundMan.Play("Ambient");
         Play("MenuMusic");
+        Play("Ambient");
     }
 
     public void Play(string name)

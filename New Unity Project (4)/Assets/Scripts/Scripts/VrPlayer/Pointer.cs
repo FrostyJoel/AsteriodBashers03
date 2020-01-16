@@ -124,9 +124,4 @@ public class Pointer : MonoBehaviour
         }
         GetComponent<Player>().Interactible(CreateRaycast(interactableMask));
     }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.DrawRay(transform.position, transform.forward*dis);
-    }
 }

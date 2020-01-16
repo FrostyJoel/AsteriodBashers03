@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class AstroidMovement : MonoBehaviour
 {
+    [Header("Particle")]
+    public ParticleSystem deathAnimation;
+
     [Header("MoveSpeed")]
     public float moveSpeed;
     public float minMovespeed;
@@ -30,5 +33,18 @@ public class AstroidMovement : MonoBehaviour
     {
         Vector3 forwardRot = transform.rotation * transform.forward;
         transform.Translate(forwardRot *moveSpeed* Time.deltaTime);
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        if (other.tag == "Laser" || other.tag == "Explosion")
+        {
+            deathAnimation.Play();
+            GameManager.instance.uiMan.scoreGot += (GetComponentInChildren<SpaceJunk>().randomScale + GetComponentInChildren<SpaceJunk>().rotSpeed + moveSpeed);
+            GetComponent<Renderer>().enabled = false;
+            GetComponent<Collider>().enabled = false;
+            moveSpeed = 0;
+            Destroy(gameObject, deathAnimation.main.duration);
+        }
     }
 }

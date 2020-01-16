@@ -10,16 +10,18 @@ public class Instantiate : MonoBehaviour
     public int maxRockets;
     public float maxCooldownTillNewRocket;
     public float currentCooldown;
+    public float dis;
 
     public void FireParticle()
     {
-        Instantiate(ps,transform.position,transform.rotation);
+        GameObject g = Instantiate(instatiate, transform.position, transform.rotation);
     }
+
     public void FireRocket()
     {
         if(currentRocket > 0)
         {
-            Instantiate(instatiate, transform.position,instatiate.transform.rotation);
+            Instantiate(instatiate, transform.position,Quaternion.Euler(transform.forward));
             currentRocket--;
         }
         else
@@ -40,6 +42,11 @@ public class Instantiate : MonoBehaviour
                 currentCooldown = maxCooldownTillNewRocket;
                 currentRocket++;
             }
+        }
+        RaycastHit hit;
+        if(Physics.Raycast(transform.position,transform.forward,out hit, dis))
+        {
+            Debug.DrawRay(transform.position, transform.forward*dis, Color.yellow);
         }
     }
 }

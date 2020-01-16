@@ -10,17 +10,9 @@ public class LaserShot : MonoBehaviour
 
     public Transform barrelTransform;
     public float moveSpeed; 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(transform.forward * moveSpeed * Time.deltaTime);
+        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
     }
 }

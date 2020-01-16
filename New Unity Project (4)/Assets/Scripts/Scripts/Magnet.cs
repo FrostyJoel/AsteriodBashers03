@@ -29,7 +29,7 @@ public class Magnet : Weapons
     {
         while (readyToFire)
         {
-            
+            OpenMagnet();
             magneticField.SetActive(true);
             yield return new WaitForSeconds(magneticTimer);
             ResetWeapon();

@@ -15,6 +15,7 @@ TagManager:
   - AimWall
   - Target
   - Button
+  - RocketButton
   layers:
   - Default
   - TransparentFX

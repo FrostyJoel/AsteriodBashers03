@@ -6,6 +6,7 @@ public class LaserMissle : MonoBehaviour
 {
     public float maxTime;
     public float currentTime;
+    public float moveSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,7 @@ public class LaserMissle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.Translate(transform.forward * moveSpeed * Time.deltaTime);
         Timer();
     }
     public void Timer()
