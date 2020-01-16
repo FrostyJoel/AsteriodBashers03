@@ -14316,7 +14316,6 @@ GameObject:
   - component: {fileID: 5218675772290609878}
   - component: {fileID: 5192769717792966650}
   - component: {fileID: 5424111667046064972}
-  - component: {fileID: 1016644055012594029}
   - component: {fileID: 5934550317363583492}
   - component: {fileID: 4888297394321458246}
   m_Layer: 0
@@ -14334,7 +14333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5393020182834441606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.01, z: 0}
+  m_LocalPosition: {x: 0, y: -0.674, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5394543262892183770}
@@ -15502,7 +15501,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   RotationModule:
-    enabled: 0
+    enabled: 1
     x:
       serializedVersion: 2
       minMaxState: 3
@@ -19084,23 +19083,6 @@ MonoBehaviour:
   destroyWhenDone: 1
   soundPrefabIsChild: 0
   pitchRandomMultiplier: 1.2
---- !u!114 &1016644055012594029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5393020182834441606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b649de7f13cd545b6f48fc84f7e243, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  position: {x: 0, y: 0, z: 0}
-  rightLaser: {fileID: 0}
-  LeftLaser: {fileID: 0}
-  barrelTransform: {fileID: 0}
-  moveSpeed: 30
 --- !u!114 &5934550317363583492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19115,7 +19097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxTime: 5
   currentTime: 20
-  moveSpeed: 0
+  moveSpeed: 30
 --- !u!135 &4888297394321458246
 SphereCollider:
   m_ObjectHideFlags: 0

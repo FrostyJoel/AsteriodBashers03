@@ -42,10 +42,32 @@ public class AstroidMovement : MonoBehaviour
             GameManager.instance.soundMan.Play("Explosion " + GameManager.instance.soundMan.RandomExplosionSound().ToString());
             deathAnimation.Play();
             GameManager.instance.uiMan.scoreGot += (GetComponentInChildren<SpaceJunk>().randomScale + GetComponentInChildren<SpaceJunk>().rotSpeed + moveSpeed);
-            GetComponent<Renderer>().enabled = false;
-            GetComponent<Collider>().enabled = false;
+            if (GetComponent<Renderer>())
+            {
+                GetComponent<Renderer>().enabled = false;
+            }
+            if (GetComponentInChildren<Renderer>())
+            {
+                GetComponentInChildren<Renderer>().enabled = false;
+            }
+            if (GetComponent<Collider>())
+            {
+                GetComponent<Collider>().enabled = false;
+            }
+            if (GetComponentInChildren<Collider>())
+            {
+                GetComponentInChildren<Collider>().enabled = false;
+            }
             moveSpeed = 0;
             Destroy(gameObject, deathAnimation.main.duration);
         }
     }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Shield")
+    //    {
+    //        GameManager.instance.soundMan.Play("ShieldHit");
+    //        Destroy(gameObject);
+    //    }
+    //}
 }

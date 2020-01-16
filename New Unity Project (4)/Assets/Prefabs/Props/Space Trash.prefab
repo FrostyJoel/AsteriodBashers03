@@ -11,7 +11,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
+  m_Size: {x: 1.75, y: 1.75, z: 1.75}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7334784507179251131
 GameObject:
@@ -222,6 +222,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 8803582059774537590, guid: f56a1c71915f5084499fff104177d4e5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d6752486a5de99a4183540eafe98d444, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f56a1c71915f5084499fff104177d4e5, type: 3}
 --- !u!1 &6666644144122547650 stripped

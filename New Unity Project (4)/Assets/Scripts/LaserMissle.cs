@@ -16,7 +16,7 @@ public class LaserMissle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(transform.forward * moveSpeed * Time.deltaTime);
+        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
         Timer();
     }
     public void Timer()

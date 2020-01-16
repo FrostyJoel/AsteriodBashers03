@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
     {
         if (hit.collider != null)
         { 
-            if (hit.transform.tag == "Asteroid" || hit.transform.tag == "Fuel"||hit.transform.tag == "AimWall" && GameManager.instance.weaponMan.laser)
+            if (hit.transform.tag == "Astroid" || hit.transform.tag == "Fuel"|| hit.transform.tag == "AimWall" && GameManager.instance.weaponMan.laser)
             {
                 GameManager.instance.weaponMan.laserBeam.GetComponent<LaserBeam>().aimPoint = hit.point;
                 foreach (GameObject laser in GameManager.instance.weaponMan.laserBeam.GetComponent<LaserBeam>().firePoint)
