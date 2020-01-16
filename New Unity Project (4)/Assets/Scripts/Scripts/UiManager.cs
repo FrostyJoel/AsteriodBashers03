@@ -86,11 +86,10 @@ public class UiManager : MonoBehaviour
         GameManager.instance.spawnPoint.StartGame();
     }
 
-    public void ResetGame(GameObject startScreen)
+    public void ResetGame()
     {
         //TODO GO TO MENU SCENE
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        startScreen.SetActive(true);
+        SceneManager.LoadScene(0);
     }
 
     public void GameOver()

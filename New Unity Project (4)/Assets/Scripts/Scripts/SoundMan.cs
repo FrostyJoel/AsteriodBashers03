@@ -17,6 +17,7 @@ public class SoundMan : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
