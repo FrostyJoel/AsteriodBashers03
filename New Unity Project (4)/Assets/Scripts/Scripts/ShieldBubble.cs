@@ -16,6 +16,7 @@ public class ShieldBubble : Weapons
     {
         while (readyToFire)
         {
+            //sound.sounds[6].source.Stop();
             actualShield.SetActive(true);
             shieldParticle.PlayParticle();
             yield return new WaitForSeconds(shieldTimer);

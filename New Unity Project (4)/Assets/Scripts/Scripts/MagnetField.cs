@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MagnetField : MonoBehaviour
 {
-    
+    public MagnetParticle magnetpull;
     
     private void OnTriggerEnter(Collider collision)
     {
