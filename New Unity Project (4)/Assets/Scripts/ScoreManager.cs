@@ -53,7 +53,7 @@ public class ScoreManager : MonoBehaviour
         {
             if (names[i].name != "")
             {
-                scoreSlots[i].text = "Name: " + names[i].name.ToString() + "\n" + "Score: " + names[i].score.ToString();
+                scoreSlots[i].text = "Naam: " + names[i].name.ToString() + "\n" + "Score: " + names[i].score.ToString();
             }
         }
         SaveUI();

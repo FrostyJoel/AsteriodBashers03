@@ -10,6 +10,7 @@ public class MagnetField : MonoBehaviour
     {
         if(collision.gameObject.tag == "Fuel")
         {
+            GameManager.instance.soundMan.Play("FuelPickup");
             GameManager.instance.ship.currentFuel += collision.transform.GetComponent<AstroidMovement>().totalAmountOfDamOrFuel;
             GameManager.instance.ship.UiUpdate();
             Destroy(collision.gameObject);
