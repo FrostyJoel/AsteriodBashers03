@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class StartButton : UIButtonBase
 {
     public GameObject nameEnterLeft;
-
+    public GameObject titleCard;
     public GameObject _TextLeft;
     public bool isStartingGameButton;
 
@@ -32,8 +32,11 @@ public class StartButton : UIButtonBase
 
             if (isStartingGameButton)
             {
-
                 _TextLeft.SetActive(true);
+            }
+            else
+            {
+                titleCard.SetActive(false);
             }
         }
     }

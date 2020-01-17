@@ -183,6 +183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathAnimation: {fileID: 7589035201860266932}
+  propCollider: {fileID: 3976704410010915655}
+  propRenderer: {fileID: 3876116864598214623}
   moveSpeed: 0
   minMovespeed: 5
   maxMovespeed: 10

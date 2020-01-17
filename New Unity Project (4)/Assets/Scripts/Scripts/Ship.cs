@@ -87,7 +87,8 @@ public class Ship : MonoBehaviour
 
         if (currentFuel <= dangerzone)
         {
-            if (sound.sounds[12].source.isPlaying)
+            Sound s = System.Array.Find(GameManager.instance.soundMan.sounds, sound => sound.name == "Alarm");
+            if (s.source.isPlaying)
             {
                 return;
             }

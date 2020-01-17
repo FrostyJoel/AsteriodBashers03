@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class AstroidMovement : MonoBehaviour
 {
-    [Header("Particle")]
+    [Header("Particle & Collider & Renderer")]
     public ParticleSystem deathAnimation;
+    public Collider propCollider;
+    public Renderer propRenderer;
 
     [Header("MoveSpeed")]
     public float moveSpeed;
@@ -39,26 +41,12 @@ public class AstroidMovement : MonoBehaviour
     {
         if (other.tag == "Laser" || other.tag == "Explosion")
         {
-            GameManager.instance.soundMan.Play("Explosion " + GameManager.instance.soundMan.RandomExplosionSound().ToString());
-            deathAnimation.Play();
-            GameManager.instance.uiMan.scoreGot += (GetComponentInChildren<SpaceJunk>().randomScale + GetComponentInChildren<SpaceJunk>().rotSpeed + moveSpeed);
-            if (GetComponent<Renderer>())
-            {
-                GetComponent<Renderer>().enabled = false;
-            }
-            if (GetComponentInChildren<Renderer>())
-            {
-                GetComponentInChildren<Renderer>().enabled = false;
-            }
-            if (GetComponent<Collider>())
-            {
-                GetComponent<Collider>().enabled = false;
-            }
-            if (GetComponentInChildren<Collider>())
-            {
-                GetComponentInChildren<Collider>().enabled = false;
-            }
+            propRenderer.enabled = false;
+            propCollider.enabled = false;
             moveSpeed = 0;
+            deathAnimation.Play();
+            GameManager.instance.soundMan.Play("Explosion " + GameManager.instance.soundMan.RandomExplosionSound().ToString());
+            GameManager.instance.uiMan.scoreGot += (GetComponentInChildren<SpaceJunk>().randomScale + GetComponentInChildren<SpaceJunk>().rotSpeed + moveSpeed);
             Destroy(gameObject, deathAnimation.main.duration);
         }
     }
