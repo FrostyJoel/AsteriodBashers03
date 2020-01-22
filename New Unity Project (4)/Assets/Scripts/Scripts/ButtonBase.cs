@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ButtonBase : MonoBehaviour
 {
-    public Image buttonTrigger;
+    public Animator buttonTrigger;
     public bool triggerd;
 
     public virtual void Selected()
@@ -13,7 +13,8 @@ public class ButtonBase : MonoBehaviour
         Debug.Log("Selected");
         if(buttonTrigger != null)
         {
-            buttonTrigger.color = Color.green;
+            buttonTrigger.ResetTrigger("ButtonUntrigger");
+            buttonTrigger.SetTrigger("ButtonTrigger");
         }
     }
 }

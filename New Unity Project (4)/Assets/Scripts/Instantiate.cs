@@ -30,6 +30,7 @@ public class Instantiate : MonoBehaviour
             Debug.Log("No more Rockets");
         }
     }
+
     private void Update()
     {
         if (currentRocket < maxRockets)
@@ -44,10 +45,10 @@ public class Instantiate : MonoBehaviour
                 currentRocket++;
             }
         }
-        RaycastHit hit;
-        if(Physics.Raycast(transform.position,transform.forward,out hit, dis))
-        {
-            Debug.DrawRay(transform.position, transform.forward*dis, Color.yellow);
-        }
+        //RaycastHit hit;
+        //if(Physics.Raycast(transform.position,transform.forward,out hit, dis))
+        //{
+        //    Debug.DrawRay(transform.position, transform.forward*dis, Color.yellow);
+        //}
     }
 }

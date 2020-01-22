@@ -146,6 +146,7 @@ public class Player : MonoBehaviour
         if(rayHit.transform.tag == "RocketButton")
         {
             GameManager.instance.weaponMan.GetComponent<Instantiate>().FireRocket();
+            rayHit.transform.GetComponent<Animator>().SetTrigger("Triggerd");
         }
     }
 

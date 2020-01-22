@@ -13,7 +13,8 @@ public class ButtonManager : MonoBehaviour
             button.triggerd = false;
             if(button.buttonTrigger != null)
             {
-                button.buttonTrigger.color = Color.red;
+                button.buttonTrigger.ResetTrigger("ButtonTrigger");
+                button.buttonTrigger.SetTrigger("ButtonUntrigger");
             }
         }
     }

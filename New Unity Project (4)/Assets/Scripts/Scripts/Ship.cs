@@ -7,6 +7,7 @@ public class Ship : MonoBehaviour
     [Header("Camera Shake")]
     public float dur;
     public float magnitude;
+
     [Header("Fuel")]
     public float currentFuel;
     public float dangerzone = 250.0f;

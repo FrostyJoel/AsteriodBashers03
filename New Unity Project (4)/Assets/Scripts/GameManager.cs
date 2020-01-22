@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public ScoreManager scoreMan;
     public Player player;
     public SaveLoading saveLoad;
+    public NameManager nameMan;
 
     private void Awake()
     {

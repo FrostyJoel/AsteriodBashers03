@@ -8,6 +8,7 @@ public class StartButton : UIButtonBase
     public GameObject nameEnterLeft;
     public GameObject titleCard;
     public GameObject _TextLeft;
+    public GameObject keyBoard;
     public bool isStartingGameButton;
 
     void Update()
@@ -18,7 +19,7 @@ public class StartButton : UIButtonBase
             {
                 nameEnterLeft.SetActive(true);
 
-                _TextLeft.SetActive(false);
+                keyBoard.SetActive(true);
             }
 
             else
@@ -32,7 +33,9 @@ public class StartButton : UIButtonBase
 
             if (isStartingGameButton)
             {
+                titleCard.SetActive(true);
                 _TextLeft.SetActive(true);
+                keyBoard.SetActive(false);
             }
             else
             {
